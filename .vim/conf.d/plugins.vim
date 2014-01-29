@@ -27,7 +27,6 @@ let Tlist_File_Fold_Auto_Close = 1
 map P :TagbarOpen<CR> 
 "test-them Bundle 'majutsushi/tagbar'
 "test-them Bundle 'msanders/cocoa.vim'
-"test-them Bundle 'scrooloose/nerdtree'
 "test-them Bundle 'scrooloose/syntastic'
 "test-them Bundle 'sjl/badwolf'
 "test-them Bundle 'zaiste/Atom'
@@ -46,4 +45,5 @@ map P :TagbarOpen<CR>
 "test-them Bundle 'javacomplete'
 "#TODO: remember eclim
 " Another vundle requirement
-filetype plugin indent on 
+filetype plugin indent on
+filetype on
