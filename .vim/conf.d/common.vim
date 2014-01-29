@@ -13,6 +13,7 @@ filetype plugin on " We want vim to load settings based on filetypes
 filetype plugin indent on " pyflakes requirement #TODO: what is this?
 "set ruler " shows position of cursor in the bottom #TODO: want?
 set cursorline " hilight the active line, must-have, but not good for slow systems #TODO: disable when on low-end systems
+set more " more/less behavior when messages span over the buffer length
 set wrap " Long lines will wrap and display on next line
 " if not running CLI, reduce UI elements #TODO: test
 "if has("gui_running")
@@ -20,6 +21,7 @@ set wrap " Long lines will wrap and display on next line
 " set guioptions-=mT<CR>
 "endif
 "
+"set spell
 set clipboard=unnamed " use OSX clipboard #TODO: only set if on osx
 set incsearch " Move cursor while searching
 set hlsearch " hilight searchterms while searching
