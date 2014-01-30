@@ -1,3 +1,6 @@
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
+
 " This one is inspired from the link below and offers easy completion
 " http://stackoverflow.com/questions/510503/ctrlspace-for-omni-and-keyword-completion-in-vim
 function! Auto_complete_string()
