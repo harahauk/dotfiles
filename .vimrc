@@ -8,3 +8,5 @@ source ~/.vim/conf.d/common.vim
 source ~/.vim/conf.d/filetype-specifics.vim
 " Load self-defined functions
 source ~/.vim/conf.d/functions.vim
+" Define snippets 
+source ~/.vim/conf.d/snippets.vim

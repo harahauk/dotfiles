@@ -14,17 +14,27 @@ filetype plugin on " We want vim to load settings based on filetypes
 filetype plugin indent on " pyflakes requirement #TODO: what is this?
 "set ruler " shows position of cursor in the bottom #TODO: want?
 set cursorline " hilight the active line, must-have, but not good for slow systems #TODO: disable when on low-end systems
+set ruler " display position of cursor in status bar
 set showmatch " show matching brackets of code
 set more " more/less behavior when messages span over the buffer length
 set wrap " Long lines will wrap and display on next line
-set nobackup " We don't want vim making a lot of backups, use git/svn instead
+" We dont need this with powerline
+"hi statusline ctermfg=white ctermbg=blue cterm=NONE
+"hi statuslineNC ctermfg=black ctermbg=grey cterm=NONE
 " if not running CLI, reduce UI elements #TODO: test
 "if has("gui_running")
 " set guioptions+=mT<CR>
 " set guioptions-=mT<CR>
 "endif
 "
+" TODO: Read up on the next 5 options for fine tuning
+set showcmd " vis kommando i status
+ set laststatus=2 " vis statuslinje alltid
+set wildmode=longest:full " wildmenu ompletions as bash, not dos
+set wildmenu " kommando completion blir bedre
+set ch=1    " commandline height
 "set spell
+set nobackup " We don't want vim making a lot of backups, use git/svn instead
 set clipboard=unnamed " use OSX clipboard #TODO: only set if on osx
 set incsearch " Move cursor while searching
 set hlsearch " hilight searchterms while searching
