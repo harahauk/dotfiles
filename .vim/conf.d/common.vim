@@ -12,7 +12,9 @@ syntax on
 color jellybeans
 filetype plugin on " We want vim to load settings based on filetypes
 filetype plugin indent on " pyflakes requirement #TODO: what is this?
-"set ruler " shows position of cursor in the bottom #TODO: want?
+" Hilight bad whitespace
+highlight BadWhitespace ctermbg=red guibg=red
+match BadWhitespace /\s\+$/
 set cursorline " hilight the active line, must-have, but not good for slow systems #TODO: disable when on low-end systems
 set ruler " display position of cursor in status bar
 set showmatch " show matching brackets of code
@@ -29,7 +31,7 @@ hi statusline ctermfg=white ctermbg=blue cterm=NONE
 "
 " TODO: Read up on the next 5 options for fine tuning
 set showcmd " vis kommando i status
- set laststatus=2 " vis statuslinje alltid
+set laststatus=2 " vis statuslinje alltid
 set wildmode=longest:full " wildmenu ompletions as bash, not dos
 set wildmenu " kommando completion blir bedre
 set ch=1    " commandline height
@@ -42,7 +44,7 @@ set ignorecase " Ignore case when searching ..
 set smartcase " .. Unless we provide case
 set autoread " watch for file changes #TODO: needs more oomph
 " Disabling this for the a while, getting used to motions
-"set backspace=indent,eol,start " vi vil viske ut masse rart
+set backspace=indent,eol,start " Backspace erases indentations, end of lines and start of lines 
 
 " " Tabbing and indenting
 set tabstop=8
