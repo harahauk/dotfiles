@@ -9,7 +9,7 @@ Bundle 'nanotech/jellybeans.vim'
 "test-them " vim-scripts mirrors are not neccesarily last version
 " Simple TODO buffer generator, reads FIXME etc and makes a list to navigate.
 Bundle 'TaskList.vim'
-map T :TaskList<CR> 
+map T :TaskList<CR>
 "test-them Bundle 'indentLine.vim'
 " Taglist uses exuberant ctags to create an IDE-like navigator through
 " variables and functions
@@ -24,7 +24,7 @@ let Tlist_WinWidth=28
 let Tlist_Exit_OnlyWindow=1
 let Tlist_File_Fold_Auto_Close = 1
 " Defines a hotkey that opens the navigator
-map P :TagbarOpen<CR> 
+map P :TagbarOpen<CR>
 Bundle 'tpope/vim-fugitive'
 "test-them Bundle 'majutsushi/tagbar'
 "test-them Bundle 'msanders/cocoa.vim'
@@ -42,9 +42,12 @@ Bundle 'tpope/vim-fugitive'
 "test-them Bundle 'skammer/vim-css-color'
 "test-them Bundle 'klen/python-mode'
 "test-them Bundle 'tpope/vim-fugitive'
-"test-them Bundle 'Vim-JDE'
-"test-them Bundle 'javacomplete'
-"#TODO: remember eclim
+" Enviroment for Java and C++ coding, not tested, might just rely on jcomplete
+"Bundle 'Vim-JDE'
+" Java omnifunc complete, works pretty well
+Bundle 'javacomplete'
+autocmd Filetype java setlocal omnifunc=javacomplete#Complete
+"#TODO: Check status on eclim project.
 " Another vundle requirement
 filetype plugin indent on
 filetype on
