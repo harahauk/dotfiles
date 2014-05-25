@@ -15,7 +15,12 @@ map T :TaskList<CR>
 " variables and functions
 Bundle 'taglist.vim'
 " Settings for taglist.vim
-let Tlist_Ctags_Cmd = '/usr/local/bin/ctags' "exuberant ctags
+if filereadable("")
+    let Tlist_Ctags_Cmd = '/usr/local/bin/ctags' "exuberant ctags
+else
+    " Assume the cygwin version of ctags
+    let Tlist_Ctags_Cmd = "/usr/bin/ctags"
+endif
 let Tlist_Use_Right_Window=1
 let Tlist_Auto_Open=0
 let Tlist_Enable_Fold_Column=0
