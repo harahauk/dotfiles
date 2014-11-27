@@ -3,7 +3,7 @@ servers = (
     address = "im.hauknes.org";
     chatnet = "im";
     port = "6667";
-    nick = "sinzim"
+    nick = "sinzim";
     autoconnect = "yes";
   },
   {
@@ -26,7 +26,7 @@ servers = (
     nick = "sinzim";
   },
   { address = "irc.efnet.org"; chatnet = "EFNet"; port = "6667"; },
-  {
+  { 
     address = "irc.quakenet.org";
     chatnet = "QuakeNet";
     port = "6667";
@@ -34,7 +34,7 @@ servers = (
 );
 
 chatnets = {
-  EFNet = {
+  EFNet = { 
     type = "IRC";
     max_kicks = "4";
     max_msgs = "3";
@@ -47,6 +47,14 @@ chatnets = {
     max_msgs = "3";
     max_whois = "1";
   };
+  QuakeNet = { type = "IRC"; };
+  slack = {
+    type = "IRC";
+    nick = "harahauk";
+    username = "harahauk";
+    realname = "Harald Hauknes";
+    host = "orakeltjenesten.irc.slack.com";
+  };
 };
 
 channels = (
@@ -55,7 +63,7 @@ channels = (
   { name = "#online"; chatnet = "Freenode"; autojoin = "Yes"; },
   { name = "#tihlde"; chatnet = "Freenode"; autojoin = "Yes"; },
   { name = "#orakelfjas"; chatnet = "Freenode"; autojoin = "Yes"; },
-  { name = "#orakeldrift"; chatnet = "Freenode"; autojoin = "Yes"; },
+  { name = "#orakeldrift"; chatnet = "Freenode"; autojoin = "Yes"; }
 );
 
 aliases = {
