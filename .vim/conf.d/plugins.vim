@@ -15,7 +15,7 @@ map T :TaskList<CR>
 " variables and functions
 Bundle 'taglist.vim'
 " Settings for taglist.vim
-if filereadable("")
+if filereadable('/usr/local/bin/ctags')
     let Tlist_Ctags_Cmd = '/usr/local/bin/ctags' "exuberant ctags
 else
     " Assume the cygwin version of ctags
@@ -31,6 +31,9 @@ let Tlist_File_Fold_Auto_Close = 1
 " Defines a hotkey that opens the navigator
 map P :TagbarOpen<CR>
 Bundle 'tpope/vim-fugitive'
+Bundle 'ashisha/image.vim'
+" Autodisplay image
+au BufRead *.png,*.jpg,*.jpeg :call DisplayImage()
 "test-them Bundle 'majutsushi/tagbar'
 "test-them Bundle 'msanders/cocoa.vim'
 "test-them Bundle 'scrooloose/syntastic'
