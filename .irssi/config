@@ -291,7 +291,7 @@ windows = {
         type = "CHANNEL";
         chat_type = "IRC";
         name = "#orakel";
-        tag = "im";
+        tag = "slack";
       }
     );
   };
@@ -346,25 +346,5 @@ windows = {
       }
     );
   };
-  10 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#utvikling";
-        tag = "slack";
-      }
-    );
-  };
-  11 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#orakel";
-        tag = "slack";
-      }
-    );
-  };
 };
-mainwindows = { 8 = { first_line = "1"; lines = "21"; }; };
+mainwindows = { 1 = { first_line = "1"; lines = "65"; }; };
