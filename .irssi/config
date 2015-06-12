@@ -34,7 +34,7 @@ servers = (
     nick = "sinzim";
   },
   { address = "irc.efnet.org"; chatnet = "EFNet"; port = "6667"; },
-  {
+  { 
     address = "irc.quakenet.org";
     chatnet = "QuakeNet";
     port = "6667";
@@ -42,7 +42,7 @@ servers = (
 );
 
 chatnets = {
-  EFNet = {
+  EFNet = { 
     type = "IRC";
     max_kicks = "4";
     max_msgs = "3";
@@ -258,7 +258,9 @@ hilights = (
 ignores = (
   { mask = "kloeri"; level = "ALL"; },
   { mask = "fraggyfanek"; level = "ALL"; },
-  { mask = "*Netsplit*"; level = "ALL"; }
+  { mask = "*Netsplit*"; level = "ALL"; },
+  { level = "MODES"; channels = ( "#orakel" ); },
+  { level = "MODES"; channels = ( "#drift" ); }
 );
 notifies = { };
 keyboard = ( { key = "meta-g"; id = "scroll_end"; data = ""; } );
@@ -308,8 +310,8 @@ windows = {
       {
         type = "CHANNEL";
         chat_type = "IRC";
-        name = "#orakeldrift";
-        tag = "Freenode";
+        name = "#drift";
+        tag = "slack";
       }
     );
   };
@@ -344,5 +346,25 @@ windows = {
       }
     );
   };
+  10 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#utvikling";
+        tag = "slack";
+      }
+    );
+  };
+  11 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#orakel";
+        tag = "slack";
+      }
+    );
+  };
 };
-mainwindows = { 1 = { first_line = "1"; lines = "65"; }; };
+mainwindows = { 8 = { first_line = "1"; lines = "21"; }; };
