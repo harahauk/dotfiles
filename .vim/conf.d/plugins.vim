@@ -54,6 +54,7 @@ Bundle 'javacomplete'
 autocmd Filetype java setlocal omnifunc=javacomplete#Complete
 " Swift syntax hilighting
 Bundle 'toyamarinyon/vim-swift'
+Bundle 'elzr/vim-json'
 "#TODO: Check status on eclim project.
 " Another vundle requirement
 filetype plugin indent on
