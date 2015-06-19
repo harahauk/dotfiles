@@ -7,6 +7,14 @@ servers = (
     autoconnect = "yes";
   },
   {
+    address = "orakeltjenesten.irc.slack.com";
+    chatnet = "slack";
+    port = "6697";
+    nick = "harahauk";
+    autoconnect = "yes";
+    password = "orakeltjenesten.7yvTFk6PbE4hsmr6Q2Dd";
+  },
+  {
     address = "chat.freenode.org";
     chatnet = "Freenode";
     port = "6667";
@@ -47,14 +55,13 @@ chatnets = {
     max_msgs = "3";
     max_whois = "1";
   };
-  QuakeNet = { type = "IRC"; };
   slack = {
     type = "IRC";
     nick = "harahauk";
     username = "harahauk";
     realname = "Harald Hauknes";
-    host = "orakeltjenesten.irc.slack.com";
   };
+  QuakeNet = { type = "IRC"; };
 };
 
 channels = (
@@ -251,7 +258,9 @@ hilights = (
 ignores = (
   { mask = "kloeri"; level = "ALL"; },
   { mask = "fraggyfanek"; level = "ALL"; },
-  { mask = "*Netsplit*"; level = "ALL"; }
+  { mask = "*Netsplit*"; level = "ALL"; },
+  { level = "MODES"; channels = ( "#orakel" ); },
+  { level = "MODES"; channels = ( "#drift" ); }
 );
 notifies = { };
 keyboard = ( { key = "meta-g"; id = "scroll_end"; data = ""; } );
@@ -282,7 +291,7 @@ windows = {
         type = "CHANNEL";
         chat_type = "IRC";
         name = "#orakel";
-        tag = "im";
+        tag = "slack";
       }
     );
   };
@@ -301,8 +310,8 @@ windows = {
       {
         type = "CHANNEL";
         chat_type = "IRC";
-        name = "#orakeldrift";
-        tag = "Freenode";
+        name = "#drift";
+        tag = "slack";
       }
     );
   };

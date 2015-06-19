@@ -55,3 +55,4 @@ set smartindent
 set autoindent " Copy indenting from the line before
 set expandtab " Spaces instead of tabs
 set textwidth=80 " Haters gonna hate
+set directory=~/ " swp files can stay in home directory
