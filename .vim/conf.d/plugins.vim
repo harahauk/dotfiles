@@ -15,7 +15,7 @@ map T :TaskList<CR>
 " variables and functions
 Bundle 'taglist.vim'
 " Settings for taglist.vim
-if filereadable("")
+if filereadable('/usr/local/bin/ctags')
     let Tlist_Ctags_Cmd = '/usr/local/bin/ctags' "exuberant ctags
 else
     " Assume the cygwin version of ctags
@@ -54,6 +54,7 @@ Bundle 'javacomplete'
 autocmd Filetype java setlocal omnifunc=javacomplete#Complete
 " Swift syntax hilighting
 Bundle 'toyamarinyon/vim-swift'
+Bundle 'elzr/vim-json'
 "#TODO: Check status on eclim project.
 " Another vundle requirement
 filetype plugin indent on
