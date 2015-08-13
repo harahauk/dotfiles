@@ -34,7 +34,7 @@ servers = (
     nick = "sinzim";
   },
   { address = "irc.efnet.org"; chatnet = "EFNet"; port = "6667"; },
-  { 
+  {
     address = "irc.quakenet.org";
     chatnet = "QuakeNet";
     port = "6667";
@@ -42,7 +42,7 @@ servers = (
 );
 
 chatnets = {
-  EFNet = { 
+  EFNet = {
     type = "IRC";
     max_kicks = "4";
     max_msgs = "3";
@@ -66,11 +66,9 @@ chatnets = {
 
 channels = (
   { name = "#delphi"; chatnet = "im"; autojoin = "Yes"; },
-  { name = "#orakel"; chatnet = "im"; autojoin = "Yes"; },
   { name = "#online"; chatnet = "Freenode"; autojoin = "Yes"; },
   { name = "#tihlde"; chatnet = "Freenode"; autojoin = "Yes"; },
   { name = "#orakelfjas"; chatnet = "Freenode"; autojoin = "Yes"; },
-  { name = "#orakeldrift"; chatnet = "Freenode"; autojoin = "Yes"; }
 );
 
 aliases = {
@@ -240,6 +238,7 @@ settings = {
     #beep_msg_level = "MSGS NOTICES DCC DCCMSGS HILIGHT";
     beep_msg_level = "MSGS DCC DCCMSGS HILIGHT NOTICES NOTIFY";
     bell_beeps = "yes";
+    term_charset = "utf-8";
   };
   "perl/core/scripts" = {
     autoaway_timeout = "10";
