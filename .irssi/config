@@ -12,9 +12,8 @@ servers = (
     port = "6697";
     nick = "harahauk";
     autoconnect = "yes";
-    # This password is being filtered by git, so if you see this line you are
-    # welcome to try my old password. Here for reference only.
-    PASSWORD = "orakeltjeneste.";
+    # This password is being filtered by git
+    PASSWORD CENCORED BY GIT FILTER";
   },
   {
     address = "chat.freenode.org";
