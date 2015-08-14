@@ -12,7 +12,9 @@ servers = (
     port = "6697";
     nick = "harahauk";
     autoconnect = "yes";
-    password = "orakeltjenesten.7yvTFk6PbE4hsmr6Q2Dd";
+    # This password is being filtered by git, so if you see this line you are
+    # welcome to try my old password. Here for reference only.
+    PASSWORD = "orakeltjenesten.JxYJxrf2EDrTPTJGMKfc";
   },
   {
     address = "chat.freenode.org";
