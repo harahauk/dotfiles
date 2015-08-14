@@ -14,7 +14,7 @@ servers = (
     autoconnect = "yes";
     # This password is being filtered by git, so if you see this line you are
     # welcome to try my old password. Here for reference only.
-    PASSWORD = "orakeltjenesten";
+    CENSORED";
   },
   {
     address = "chat.freenode.org";
