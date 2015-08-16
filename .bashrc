@@ -111,11 +111,8 @@ DYN="\e]2;\u@\h\a"
 if [ "$HOSTNAME" = "cerebdil" ]; then
     HII="\[\033[0;36m\]"
 fi
-if [ "$HOSTNAME" = "soros.local" ]; then
-    HII="\[\033[0;36m\]"
-fi
-if [ "$HOSTNAME" = "cerebdil.hauknes.org" ]; then
-    HII="\[\033[0;32m\]"
+if [ "$HOSTNAME" = "kenpachi" ]; then
+    HII="\[\033[0;34m\]"
 fi
 if [ "$HOSTNAME" = "fenris" ]; then
     HII="\[\033[0;32m\]"
@@ -126,10 +123,9 @@ fi
 
 export PS1="$NM[ $HI\u $HII\h $SI\w$NM ] $IN"
 # $DYN"
-#this had extralol
 #export PS1="$NM[ $HI\u $HII\h $SI\w$NM ] $IN$DYN"
 #export PS1="\[\e]2;\u@\H \w\a\e[32;1m\]>\[\e[0m\] "
-#export PS1="$NM[ $HI\u@$HII\h $SI\w$NM ]$ $IN" 
+#export PS1="$NM[ $HI\u@$HII\h $SI\w$NM ]$ $IN"
 if [ "$TERM" != "dumb" ] && [ "$OSTYPE" = "linux-gnu" ]; then
     export LS_OPTIONS='--color=auto'
     eval `dircolors -b ~/.dir_colors`
