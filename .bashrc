@@ -114,6 +114,9 @@ fi
 if [ "$HOSTNAME" = "kenpachi" ]; then
     HII="\[\033[0;34m\]"
 fi
+if [ "$HOSTNAME" = "endscape" ]; then
+    HII="\[\033[0;34m\]"
+fi
 if [ "$HOSTNAME" = "fenris" ]; then
     HII="\[\033[0;32m\]"
 fi
