@@ -120,7 +120,7 @@ fi
 if [ "$HOSTNAME" = "fenris" ]; then
     HII="\[\033[0;32m\]"
 fi
-if [ "$HOSTNAME" = "iris.hauknes.org" ]; then
+if [ "$HOSTNAME" = "iris" ]; then
     HII="\[\033[0;31m\]"
 fi
 
