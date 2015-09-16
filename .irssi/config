@@ -13,6 +13,7 @@ servers = (
     nick = "harahauk";
     autoconnect = "yes";
     # This password is being filtered by git
+    PASSWORD = "orakeltjenesten.Dr00WrByiS5HUlCIw4YT";
   },
   {
     address = "chat.freenode.org";
@@ -236,6 +237,7 @@ settings = {
   };
   "perl/core/scripts" = {
     autoaway_timeout = "10";
+    prowl_api_key = "f4d796de819aaff519808f7de148ba01cc883ccd";
     prowl_enabled = "yes";
     screen_away_active = "yes";
   };
