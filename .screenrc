@@ -1,0 +1,5 @@
+vbell off
+bell_msg "!!! Ding !!!"
+autodetach on
+term screen-256color
+mousetrack on
