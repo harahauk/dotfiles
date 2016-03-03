@@ -50,11 +50,13 @@ Bundle 'tpope/vim-fugitive'
 " Enviroment for Java and C++ coding, not tested, might just rely on jcomplete
 "Bundle 'Vim-JDE'
 " Java omnifunc complete, works pretty well
-Bundle 'javacomplete'
-autocmd Filetype java setlocal omnifunc=javacomplete#Complete
+" TODO: Temporary disabled for testing YCM
+" Bundle 'javacomplete'
+" autocmd Filetype java setlocal omnifunc=javacomplete#Complete
 " Swift syntax hilighting
 Bundle 'toyamarinyon/vim-swift'
 Bundle 'elzr/vim-json'
+Bundle 'Valloric/YouCompleteMe'
 "#TODO: Check status on eclim project.
 " Another vundle requirement
 filetype plugin indent on
