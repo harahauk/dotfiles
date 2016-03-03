@@ -1,0 +1,10 @@
+# Placeholder
+#set realname="Harald Hauknes"
+#set editor="vim"
+#set sort=threads
+# Where to put the stuff
+#set header_cache = "~/.mutt/cache/headers"
+#set message_cachedir = "~/.mutt/cache/bodies"
+#set certificate_file = "~/.mutt/certificates"
+source ~/Dropbox/dotfiles/mutt/mutt-colors-solarized/mutt-colors-solarized-dark-16.muttrc
+source ~/Dropbox/dotfiles/mutt/ntnu
