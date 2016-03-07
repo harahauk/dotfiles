@@ -55,6 +55,19 @@ export PS1="$NM[ $HI\u $HII\h $SI\w$NM ] $IN"
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+# Windows-specific settings:
+if [ -x /cygdrive/c/Windows ]; then
+    # nmap just requires an alias in your .bashrc, nothing more:
+    alias nmap="/cygdrive/c/Program\ Files\ \(x86\)/Nmap/nmap.exe"
+    alias capinfos="/cygdrive/c/Program\ Files/Wireshark/capinfos"
+    alias dumpcap="/cygdrive/c/Program\ Files/Wireshark/dumpcap"
+    alias editcap="/cygdrive/c/Program\ Files/Wireshark/editcap"
+    alias mergecap="/cygdrive/c/Program\ Files/Wireshark/mergecap"
+    alias rawshark="/cygdrive/c/Program\ Files/Wireshark/rawshark"
+    alias reordercap="/cygdrive/c/Program\ Files/Wireshark/reordercap"
+    alias text2pcap="/cygdrive/c/Program\ Files/Wireshark/text2pcap"
+    alias tshark="/cygdrive/c/Program\ Files/Wireshark/tshark"
+fi
 # OSX-specific settings:
 if [ -x /System/Library ]; then
     export PATH=/opt/local/bin:/opt/local/sbin:$PATH
