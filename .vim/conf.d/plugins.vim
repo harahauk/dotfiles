@@ -29,7 +29,7 @@ let Tlist_WinWidth=28
 let Tlist_Exit_OnlyWindow=1
 let Tlist_File_Fold_Auto_Close = 1
 " Defines a hotkey that opens the navigator
-map P :TagbarOpen<CR>
+map P :TlistToggle<CR>
 Bundle 'tpope/vim-fugitive'
 "test-them Bundle 'majutsushi/tagbar'
 "test-them Bundle 'msanders/cocoa.vim'
