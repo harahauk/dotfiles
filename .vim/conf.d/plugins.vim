@@ -30,10 +30,20 @@ let Tlist_Exit_OnlyWindow=1
 let Tlist_File_Fold_Auto_Close = 1
 " Defines a hotkey that opens the navigator
 map P :TlistToggle<CR>
+" Git integration
 Bundle 'tpope/vim-fugitive'
 "test-them Bundle 'majutsushi/tagbar'
 "test-them Bundle 'msanders/cocoa.vim'
-"test-them Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/syntastic'
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_quiet_messages = { 'regex': 'bad-continuation' }
+Plugin 'nvie/vim-flake8'
 "test-them Bundle 'sjl/badwolf'
 "test-them Bundle 'zaiste/Atom'
 "test-them Bundle 'w0ng/vim-hybrid'
@@ -46,7 +56,6 @@ Bundle 'tpope/vim-fugitive'
 "call vam#ActivateAddons(['powerline'])
 "test-them Bundle 'skammer/vim-css-color'
 "test-them Bundle 'klen/python-mode'
-"test-them Bundle 'tpope/vim-fugitive'
 " Enviroment for Java and C++ coding, not tested, might just rely on jcomplete
 "Bundle 'Vim-JDE'
 " Java omnifunc complete, works pretty well
@@ -56,8 +65,10 @@ Bundle 'tpope/vim-fugitive'
 " Swift syntax hilighting
 Bundle 'toyamarinyon/vim-swift'
 Bundle 'elzr/vim-json'
-Bundle 'Valloric/YouCompleteMe'
+" Requires new vim and does not build easily in cygwin
+" Bundle 'Valloric/YouCompleteMe'
 "#TODO: Check status on eclim project.
+call vundle#end() " required
 " Another vundle requirement
 filetype plugin indent on
 filetype on
