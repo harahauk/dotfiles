@@ -9,7 +9,10 @@ syntax on
 "colorscheme darkblue
 "color vibrantink
 "color candycode
-color jellybeans
+"color jellybeans
+set background=dark    " Light theme is used by default
+set t_Co=256
+colorscheme PaperColor
 filetype plugin on " We want vim to load settings based on filetypes
 filetype plugin indent on " pyflakes requirement #TODO: what is this?
 " Hilight bad whitespace

@@ -3,8 +3,8 @@ set rtp+=~/.vim/bundle/vundle/ " Set runtimepath, #TODO: not sure if needed
 call vundle#rc() " fire up vundle
 " let Vundle manage Vundle
 Bundle 'gmarik/vundle'
-" My current colorscheme
-Bundle 'nanotech/jellybeans.vim'
+"" My current colorscheme
+"Bundle 'nanotech/jellybeans.vim'
 "test-them Bundle 'sjl/vitality.vim'
 "test-them " vim-scripts mirrors are not neccesarily last version
 " Simple TODO buffer generator, reads FIXME etc and makes a list to navigate.
@@ -29,7 +29,7 @@ let Tlist_WinWidth=28
 let Tlist_Exit_OnlyWindow=1
 let Tlist_File_Fold_Auto_Close = 1
 " Defines a hotkey that opens the navigator
-map P :TlistToggle<CR>
+"map P :TlistToggle<CR>
 " Git integration
 Bundle 'tpope/vim-fugitive'
 "test-them Bundle 'majutsushi/tagbar'
@@ -68,6 +68,7 @@ Bundle 'elzr/vim-json'
 " Requires new vim and does not build easily in cygwin
 " Bundle 'Valloric/YouCompleteMe'
 "#TODO: Check status on eclim project.
+Plugin 'NLKNguyen/papercolor-theme'
 call vundle#end() " required
 " Another vundle requirement
 filetype plugin indent on
