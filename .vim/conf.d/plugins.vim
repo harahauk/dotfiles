@@ -50,25 +50,22 @@ Plugin 'nvie/vim-flake8'
 "test-them Bundle 'bigfish/vim-js-context-coloring'
 "test-them "Bundle 'altercation/vim-colors-solarized'
 "test-them "Bundle 'spf13/vim-colors' jellyban ftw really
-"test-them Bundle 'Shougo/neocomplete.vim'
 "test-them Bundle 'Lokaltog/powerline'
 " set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 "call vam#ActivateAddons(['powerline'])
 "test-them Bundle 'skammer/vim-css-color'
 "test-them Bundle 'klen/python-mode'
-" Enviroment for Java and C++ coding, not tested, might just rely on jcomplete
-"Bundle 'Vim-JDE'
 " Java omnifunc complete, works pretty well
-" TODO: Temporary disabled for testing YCM
 " Bundle 'javacomplete'
 " autocmd Filetype java setlocal omnifunc=javacomplete#Complete
 " Swift syntax hilighting
 Bundle 'toyamarinyon/vim-swift'
 Bundle 'elzr/vim-json'
-" Requires new vim and does not build easily in cygwin
-" Bundle 'Valloric/YouCompleteMe'
-"#TODO: Check status on eclim project.
+" More lightweight completion than YCM
+Bundle 'ajh17/VimCompletesMe'
 Plugin 'NLKNguyen/papercolor-theme'
+" Powershell
+Bundle 'PProvost/vim-ps1'
 call vundle#end() " required
 " Another vundle requirement
 filetype plugin indent on
