@@ -3,4 +3,4 @@
     url = https://github.com/gmarik/vundle
 [submodule "bash/bash-powerline"]
     path = bash/bash-powerline
-    url = git@github.com:harahauk/bash-powerline.git
+    url = https://github.com/harahauk/bash-powerline.git
