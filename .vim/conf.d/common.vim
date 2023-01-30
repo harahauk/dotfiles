@@ -25,6 +25,7 @@ set more " more/less behavior when messages span over the buffer length
 set wrap " Long lines will wrap and display on next line
 " We dont need this with powerline
 hi statusline ctermfg=white ctermbg=blue cterm=NONE
+hi Normal guibg=NONE ctermbg=NONE
 "hi statuslineNC ctermfg=black ctermbg=grey cterm=NONE
 " if not running CLI, reduce UI elements #TODO: test
 "if has("gui_running")
