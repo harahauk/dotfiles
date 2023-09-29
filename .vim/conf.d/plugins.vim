@@ -63,7 +63,8 @@ Bundle 'toyamarinyon/vim-swift'
 Bundle 'elzr/vim-json'
 " More lightweight completion than YCM
 Bundle 'ajh17/VimCompletesMe'
-Plugin 'NLKNguyen/papercolor-theme'
+#Plugin 'NLKNguyen/papercolor-theme'
+Plugin 'morhetz/gruvbox'
 " Powershell
 Bundle 'PProvost/vim-ps1'
 call vundle#end() " required
