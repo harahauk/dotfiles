@@ -62,8 +62,8 @@ Plugin 'nvie/vim-flake8'
 Bundle 'toyamarinyon/vim-swift'
 Bundle 'elzr/vim-json'
 " More lightweight completion than YCM
-Bundle 'ajh17/VimCompletesMe'
-#Plugin 'NLKNguyen/papercolor-theme'
+"Bundle 'ajh17/VimCompletesMe'
+"Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'morhetz/gruvbox'
 " Powershell
 Bundle 'PProvost/vim-ps1'
