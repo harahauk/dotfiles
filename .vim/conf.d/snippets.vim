@@ -9,4 +9,5 @@ iab xmldecl <?xml version="1.0" encoding="iso-8859-1"?>
 iab xmlutf8decl <?xml version="1.0" encoding="utf-8"?>
 
 " python
-iab pythonstart #!/usr/bin/env python<Cr># -*- coding: utf-8 -*-<Cr>
+iab python2start #!/usr/bin/env python<Cr># -*- coding: utf-8 -*-<Cr>
+iab pythonstart #!/usr/bin/env python3<Cr>
