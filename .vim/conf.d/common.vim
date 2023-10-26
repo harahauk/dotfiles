@@ -3,7 +3,6 @@
 " overwritten.
 " " Look and feel
 syntax on
-"set t_Co=256 "we use 256 colors
 "set background=dark
 "colorscheme desertmodified
 "colorscheme darkblue
@@ -59,5 +58,6 @@ set smarttab " correct indent on tabs
 set smartindent
 set autoindent " Copy indenting from the line before
 set expandtab " Spaces instead of tabs
-set textwidth=80 " Haters gonna hate
+"set textwidth=80 " Haters gonna hate
+set textwidth=110 " Joined the haters
 set directory=~/ " swp files can stay in home directory

@@ -11,6 +11,8 @@ ln -s $DIR/.vimrc
 echo Configuring i3
 mv .config/i3 .config/i3.backup
 ln -s $DIR/i3 .config/i3
+echo Symlinking .XResources
+ln -s $DIR/.Xresources .Xresources
 echo Sourcing powerline to bash
 echo source $DIR/bash/bash-powerline/bash-powerline.sh >> .bashrc
 # Since i don't bother with a bashrc for most systems now
