@@ -10,4 +10,4 @@ iab xmlutf8decl <?xml version="1.0" encoding="utf-8"?>
 
 " python
 iab python2start #!/usr/bin/env python<Cr># -*- coding: utf-8 -*-<Cr>
-iab pythonstart #!/usr/bin/env python3<Cr>
+iab pythonstart #!/usr/bin/env python3<Cr><Cr>def main():<Cr>pass<Cr><Cr><Cr>if __name__ == "__main__":<Cr>main()
