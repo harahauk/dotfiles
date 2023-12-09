@@ -48,9 +48,9 @@ set ignorecase " Ignore case when searching ..
 set smartcase " .. Unless we provide case
 set autoread " watch for file changes #TODO: needs more oomph
 " Disabling this for the a while, getting used to motions
-set backspace=indent,eol,start " Backspace erases indentations, end of lines and start of lines 
+set backspace=indent,eol,start " Backspace erases indentations, end of lines and start of lines
 
-" " Tabbing and indenting
+"" Tabbing and indenting
 set tabstop=8
 set softtabstop=4
 set shiftwidth=4
@@ -59,5 +59,6 @@ set smartindent
 set autoindent " Copy indenting from the line before
 set expandtab " Spaces instead of tabs
 "set textwidth=80 " Haters gonna hate
-set textwidth=110 " Joined the haters
-set directory=~/ " swp files can stay in home directory
+set textwidth=120 " If you can't beat them, join them. Joined the haters.
+set directory=~/ " Swap files can stay in home directory #FIXME: Potential security risk
+set modelines=5 " Allow the end or beginning of a file to dictate options for vim #FIXME: Evaluate security risk
