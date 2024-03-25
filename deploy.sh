@@ -11,6 +11,8 @@ ln -s $DIR/.vimrc
 echo Configuring i3
 mv .config/i3 .config/i3.backup
 ln -s $DIR/i3 .config/i3
+echo Settings for GNU Screen
+ln -s $DIR/.screenrc .screenrc
 echo Symlinking .XResources
 ln -s $DIR/.Xresources .Xresources
 echo Sourcing powerline to bash

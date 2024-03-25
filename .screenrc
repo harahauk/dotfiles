@@ -1,5 +1,11 @@
 vbell off
-bell_msg "!!! Ding !!!"
+bell_msg "!!! Bell !!!"
 autodetach on
 term screen-256color
-mousetrack on
+mousetrack off
+defscrollback 50000 # Dont miss out on backlog
+# Color support
+termcapinfo xterm* 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+terminfo xterm* 'Co#256:AB=\E[48;5;%p1%dm:AF=\E[38;5;%p1%dm'
+attrcolor b ".I"
+attrcolor i "+b"
