@@ -1,0 +1,16 @@
+---
+
+live_config_reload: true
+
+window:
+  dynamic_title: true
+  opacity: 0.8
+
+selection:
+  save_to_clipboard: true
+
+scrolling:
+  history: 10000
+
+font:
+  size: 13
