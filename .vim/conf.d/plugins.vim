@@ -31,7 +31,7 @@ let Tlist_File_Fold_Auto_Close = 1
 " Defines a hotkey that opens the navigator
 "map P :TlistToggle<CR>
 " Git integration
-Bundle 'tpope/vim-fugitive'
+"Bundle 'tpope/vim-fugitive' " Does not seem to work anymore
 "test-them Bundle 'majutsushi/tagbar'
 "test-them Bundle 'msanders/cocoa.vim'
 " FIXME: Plugins under testing
