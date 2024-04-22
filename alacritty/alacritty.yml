@@ -4,7 +4,7 @@ live_config_reload: true
 
 window:
   dynamic_title: true
-  opacity: 0.8
+  opacity: 0.85
 
 selection:
   save_to_clipboard: true
@@ -14,3 +14,7 @@ scrolling:
 
 font:
   size: 13
+key_bindings:
+- { key: V, mods: Control|Shift, action: ReceiveChar }
+mouse_bindings:
+- { mouse: Right, action: Paste }
