@@ -3,7 +3,7 @@ DIR=(`pwd`)
 echo Configuring homedir with dotfiles from $DIR
 echo Fetching submodules..
 git submodule init
-git submodule update
+git submodule update --remote
 cd
 echo Configuring vim..
 ln -s $DIR/.vim

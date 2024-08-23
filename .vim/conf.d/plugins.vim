@@ -35,7 +35,7 @@ let Tlist_File_Fold_Auto_Close = 1
 "test-them Bundle 'majutsushi/tagbar'
 "test-them Bundle 'msanders/cocoa.vim'
 " FIXME: Plugins under testing
-Bundle 'shumphrey/fugitive-gitlab'
+"Bundle 'shumphrey/fugitive-gitlab' "Apparently gone
 Bundle 'scrooloose/syntastic'
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
