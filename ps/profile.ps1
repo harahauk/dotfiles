@@ -6,5 +6,6 @@ If (Test-Path "C:\ProgramData\anaconda3\Scripts\conda.exe") {
 }
 #endregion
 
-# Enable CTRL-u deletes line
+# Enable CTRL-u deletes line and CTRL-d exits
 Set-PSReadLineKeyHandler -Key Ctrl+u -Function BackwardDeleteLine
+Set-PSReadLineKeyHandler -Key Ctrl+d -Function ViExit
