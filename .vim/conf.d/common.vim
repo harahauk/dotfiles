@@ -19,6 +19,7 @@ filetype plugin indent on " pyflakes requirement #TODO: what is this?
 highlight BadWhitespace ctermbg=red guibg=red
 match BadWhitespace /\s\+$/
 set cursorline " hilight the active line, must-have, but not good for slow systems #TODO: disable when on low-end systems
+set cursorcolumn " Vertical position marker
 set ruler " display position of cursor in status bar
 set showmatch " show matching brackets of code
 set more " more/less behavior when messages span over the buffer length
