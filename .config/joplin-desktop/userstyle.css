@@ -1,0 +1,36 @@
+/*  
+    userstyle.css
+    Used to change the way markdown is rendered in Joplin.
+    @author Harald Hauknes 
+*/
+@charset "UTF-8";
+
+/* This affects PDF-exports and propably printing */
+@media print {
+    @page {
+        /* margin: 25pt; */
+    }
+    h2, h3, h4 {
+        /* page-break-before: always !important; */
+        page-break-before: auto !important;
+        break-before: auto !important;
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+    }
+    h1 { 
+        /* page-break-before: always !important; */
+       break-before: always !important;
+       page-break-before: always !important;
+    }
+    h1:first-of-type { 
+       break-before: avoid !important;
+       page-break-before: avoid !important;
+    }
+}
+/* This affects (in theory) how markdown looks in the application */
+@media screen {
+    /*body {
+         font-size: 14px;
+        /* example - on the screen the body text will be 14px*/
+    /* }*/
+}
