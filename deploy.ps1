@@ -10,3 +10,5 @@ New-Item -Path ($PSHOME + "\Profile.ps1") -ItemType SymbolicLink -Value ($HOME +
 # Vim
 New-Item -Path ($HOME + "\.vim") -ItemType SymbolicLink -Value ($HOME + "\.config\dotfiles\.vim")
 New-Item -Path ($HOME + "\.vimrc") -ItemType SymbolicLink -Value ($HOME + "\.config\dotfiles\.vimrc")
+# Joplin
+New-Item -Path ($HOME + "\.config\joplin-desktop\userstyle.css") -ItemType SymbolicLink -Value ($HOME + "\.config\dotfiles\.config\joplin-desktop\userstyle.css")
