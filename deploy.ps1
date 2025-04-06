@@ -4,6 +4,7 @@
 # Administrator shell
 winget install --id Git.Git -e --source winget
 winget install Microsoft.VisualStudioCode
+winget install --id Microsoft.PowerToys --source winget
 # TODO PowerToys, Joplin
 # Normal shell
 ssh-keygen
