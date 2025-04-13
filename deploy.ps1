@@ -2,9 +2,12 @@
 # There's an interesting group policy to change that, but thats for later
 # TODO: Since propably running as administrator, use runas or similar for the correct user
 # Administrator shell
-winget install --id Git.Git -e --source winget
-winget install Microsoft.VisualStudioCode
-winget install --id Microsoft.PowerToys --source winget
+echo "Skipping package-insllations - you can find the commands in the script"
+#winget install --id Git.Git -e --source winget
+#winget install Microsoft.VisualStudioCode
+#winget install --id Microsoft.PowerToys --source winget
+#winget install --id=M2Team.NanaZip -e
+
 # TODO PowerToys, Joplin
 # Normal shell
 ssh-keygen
