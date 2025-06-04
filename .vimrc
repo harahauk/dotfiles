@@ -11,4 +11,4 @@ source ~/.vim/conf.d/functions.vim
 " Define snippets
 source ~/.vim/conf.d/snippets.vim
 "TODO: Make project specific
-let g:fugitive_gitlab_domains = ['https://nor-git.mdr.combitech.com']
+"let g:fugitive_gitlab_domains = ['']
