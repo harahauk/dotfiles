@@ -1,8 +1,11 @@
-# Must be ran as administator
+# Must be run as administator
+# Should NOT be run as administrator, this code is wonky
+#
 # There's an interesting group policy to change that, but thats for later
 # TODO: Since propably running as administrator, use runas or similar for the correct user
 # Administrator shell
-echo "Skipping package-installations - you can find the commands in the script"
+Write-Host "Skipping package-installations - you can find the commands in the script"
+## PACKAGE INSTALLATION ##
 # winget install --id Git.Git -e --source winget
 # winget install Microsoft.VisualStudioCode
 # winget install --id Microsoft.PowerToys --source winget
@@ -23,4 +26,4 @@ New-Item -Path ($HOME + "\.vim") -ItemType SymbolicLink -Value ($HOME + "\.confi
 New-Item -Path ($HOME + "\.vimrc") -ItemType SymbolicLink -Value ($HOME + "\.config\dotfiles\.vimrc")
 # Joplin
 New-Item -Path ($HOME + "\.config\joplin-desktop\userstyle.css") -ItemType SymbolicLink -Value ($HOME + "\.config\dotfiles\.config\joplin-desktop\userstyle.css")
-
+# TODO: Install Fonts
