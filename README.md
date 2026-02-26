@@ -1,7 +1,10 @@
-# "Dotfiles" for Harald Hauknes
-I need to go through the configuration of my favorite programs, in the process I
-plan on sharing them to Github for easy reference. Maybe someone will provide
-some pointers or get inspired.
+# `.Dotfiles` for Harald Hauknes
+Might be my oldest living versioned "code". Some of this is from my SVN-days.  
+I use this to document my settings in programs that have sensible ways of configuring themselves.
 
-#### TODO: There will be a lot of #TODO-tags, this is for my own reference to do more research on the settings I use in daily operations.
+**Disclaimer**: I do not take any responsibility if your `vim` eats your cookies. Use with caution.
+Feel free to point out any insanity to me, I appreciate pointers.
+
+## TODO
+There is a lot of #TODO-tags, this is for my own reference to do more research on the settings I use in daily operations.
 

@@ -17,4 +17,4 @@ New-Item -Path ($HOME + "\.vimrc") -ItemType SymbolicLink -Value ($HOME + "\.con
 # TODO: Only if Joplin is installed, otherwise it will create a broken link
 New-Item -Path ($HOME + "\.config\joplin-desktop\userstyle.css") -ItemType SymbolicLink -Value ($HOME + "\.config\dotfiles\.config\joplin-desktop\userstyle.css")
 Write-Output "Deployed symlinked dotfiles. Execute 'windows_applications_install.ps1' to install applications."
-
+# TODO: Install Fonts

@@ -4,7 +4,7 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # User specific aliases and functions
-.  /home/harahauk/.config/dotfiles/bash/bash-powerline/bash-powerline.sh
+.  ~/.config/dotfiles/bash/bash-powerline/bash-powerline.sh
 export TERM=screen-256color
 export SCREENDIR=~/.screen
 export TERM=xterm-256color
