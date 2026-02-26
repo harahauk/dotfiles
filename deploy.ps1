@@ -1,14 +1,9 @@
+# Requires permissions to run with a permissive policy likke RemoteSigned, Unrestricted or Bypass
+# Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 # Must be ran as administator
-# There's an interesting group policy to change that, but thats for later
+# Note: There's an interesting group policy to change that, but thats for later
 # TODO: Since propably running as administrator, use runas or similar for the correct user
-# Administrator shell
-winget install --id Git.Git -e --source winget
-winget install Microsoft.VisualStudioCode
-winget install --id Microsoft.PowerToys --source winget
-# TODO PowerToys, Joplin
-# Normal shell
-ssh-keygen
-Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+#ssh-keygen if .ssh/id_rsa does not exist
 git submodule init
 git submodule update --remote
 # New-Item -Path ([System.Environment]::GetFolderPath('MyDocuments') + "\WindowsPowerShell\profile.ps1") -ItemType SymbolicLink -Value ($HOME + "\.config\dotfiles\ps\profile.ps1")
@@ -19,5 +14,7 @@ New-Item -Path ($PSHOME + "\Profile.ps1") -ItemType SymbolicLink -Value ($HOME +
 New-Item -Path ($HOME + "\.vim") -ItemType SymbolicLink -Value ($HOME + "\.config\dotfiles\.vim")
 New-Item -Path ($HOME + "\.vimrc") -ItemType SymbolicLink -Value ($HOME + "\.config\dotfiles\.vimrc")
 # Joplin
+# TODO: Only if Joplin is installed, otherwise it will create a broken link
 New-Item -Path ($HOME + "\.config\joplin-desktop\userstyle.css") -ItemType SymbolicLink -Value ($HOME + "\.config\dotfiles\.config\joplin-desktop\userstyle.css")
+Write-Output "Deployed symlinked dotfiles. Execute 'windows_applications_install.ps1' to install applications."
 
