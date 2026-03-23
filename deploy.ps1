@@ -9,6 +9,7 @@ git submodule update --remote
 # New-Item -Path ([System.Environment]::GetFolderPath('MyDocuments') + "\WindowsPowerShell\profile.ps1") -ItemType SymbolicLink -Value ($HOME + "\.config\dotfiles\ps\profile.ps1")
 # If documents folder is not in default locations, powershell can't find the profile
 # The $HOME-variable does not change from original user in elevated promt
+# TODO: If a non-symlink exists in the targets, preserve it by renaming it <item>.bak
 New-Item -Path ($PSHOME + "\Profile.ps1") -ItemType SymbolicLink -Value ($HOME + "\.config\dotfiles\ps\profile.ps1")
 # Vim
 New-Item -Path ($HOME + "\.vim") -ItemType SymbolicLink -Value ($HOME + "\.config\dotfiles\.vim")
