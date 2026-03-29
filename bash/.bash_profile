@@ -6,8 +6,17 @@ fi
 if [ -f "/etc/skel/.bash_profile" ]; then
   source  /etc/skel/.bash_profile
 fi
+
+## Variables ##
 export TERM=xterm-256color
-## Terminal behavior and paths
+#export TERM=screen-256color
+export SCREENDIR=~/.screen
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export CLICOLOR=1
+#export LSCOLORS=GxFxCxDxBxegedabagaced 
+
+## Terminal behavior and environments ##
 if [ -f "$HOME/.config/dotfiles/bash/bash-powerline/bash-powerline.sh" ]; then
   source $HOME/.config/dotfiles/bash/bash-powerline/bash-powerline.sh
 fi
