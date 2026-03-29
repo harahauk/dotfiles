@@ -13,13 +13,14 @@ echo "Dotfiles will be sourced from '$DIR'"
 echo "Git - Fetching submodules in the 'dotfiles'-repo.."
 git submodule init
 git submodule update --remote
+echo "Git - done updating."
 
 ## Applications ##
 cd
 #TODO: Write a function to reuse the tests
 echo Configuring Vim..
 if [ -L .vim ]; then
-  echo "'.vim' was already symlinked, skipping Vim"
+  echo "'.vim' was already symlinked, skipping Vim."
 else
   ln -s $DIR/.vim $HOME/.vim
   ln -s $DIR/.vimrc $HOME/.vimrc
@@ -93,4 +94,4 @@ else
   fi
 fi
 # All done
-echo "'deploy.sh' Done."
+echo "'deploy.sh' - Done."
