@@ -1,4 +1,13 @@
+#!/bin/bash
+# Source defaults if system is Linux-based
+if [ -f "/etc/skel/.bashrc" ]; then
+  source  /etc/skel/.bashrc
+fi
+if [ -f "/etc/skel/.bash_profile" ]; then
+  source  /etc/skel/.bash_profile
+fi
 export TERM=xterm-256color
+## Terminal behavior and paths
 if [ -f "$HOME/.config/dotfiles/bash/bash-powerline/bash-powerline.sh" ]; then
   source $HOME/.config/dotfiles/bash/bash-powerline/bash-powerline.sh
 fi
