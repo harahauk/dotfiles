@@ -10,7 +10,7 @@
 ## Repository ##
 DIR=(`pwd`)
 echo "Dotfiles will be sourced from '$DIR'"
-echo Git: Fetching submodules in the 'dotfiles'-repo..
+echo "Git - Fetching submodules in the 'dotfiles'-repo.."
 git submodule init
 git submodule update --remote
 
