@@ -1,7 +1,9 @@
 #/bin/bash
 
 ##
-# Quick onboarding for new clients, symlinks configuration-files to this repo
+# Quick onboarding for new clients
+# - Symlinks (ln -s) configuration-files to the ones defines in this repo
+# - Backups any configuration in place that does not seem to origin from this script
 ##
 #TODO: .zshrc, Joplin
 
@@ -11,9 +13,10 @@ echo "Dotfiles will be sourced from '$DIR'"
 echo Git: Fetching submodules in the 'dotfiles'-repo..
 git submodule init
 git submodule update --remote
+
 ## Applications ##
 cd
-# TODO: Write a function to reuse the tests
+#TODO: Write a function to reuse the tests
 echo Configuring Vim..
 if [ -L .vim ]; then
   echo "'.vim' was already symlinked, skipping Vim"
