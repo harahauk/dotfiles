@@ -7,3 +7,6 @@
 [submodule "powerline-fonts"]
 	path = powerline-fonts
 	url = https://github.com/powerline/fonts
+[submodule "ms-windows"]
+	path = ms-windows
+	url = git@github.com:harahauk/ps-windows-util
