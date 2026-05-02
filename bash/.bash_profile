@@ -3,9 +3,12 @@
 if [ -f "/etc/skel/.bashrc" ]; then
   source  /etc/skel/.bashrc
 fi
-if [ -f "/etc/skel/.bash_profile" ]; then
-  source  /etc/skel/.bash_profile
-fi
+# This breaks bash with a segfault in WSL2, it should propably not be here. Not the above code either, but since its
+# holding up for now i'll keep it
+#if [ -f "/etc/skel/.bash_profile" ]; then
+  #echo "#TODO: Move sourcing-logic to correct runtime-stage"
+  #source  /etc/skel/.bash_profile
+#fi
 
 #TODO: Add any local bins like
 #/Users/shad0t/Library/Python/3.9/bin
