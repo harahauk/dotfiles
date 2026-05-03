@@ -50,6 +50,7 @@ if ( $tar_capable.Length -gt 5 ) {
 # If not tar, then 7z
 #$7zip_present = $(where.exe 7z.exe)
 #Write-Host $7zip_present
+# Also see: https://deepwiki.com/M2Team/NanaZip/1.2-getting-started
 Write-Host -ForegroundColor DarkYellow "Create folder - Creating installation-path: '$installation_path'"
 #
 ## Installation ##
