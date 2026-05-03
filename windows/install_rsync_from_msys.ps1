@@ -3,7 +3,7 @@
 # install_rsync.ps1
 #
 # Installs `rsync` using precompiled packages from [MSYS](https://repo.msys2.org/msys/x86_64/)
-# This is a supplement to the OpenSSH-server on Windows
+# This is a supplement to the [OpenSSH-server on Windows](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=powershell&pivots=windows-11)
 #
 # @author Harald Hauknes <harald at hauknes dot org>
 ##
