@@ -6,6 +6,12 @@ If (Test-Path "C:\ProgramData\anaconda3\Scripts\conda.exe") {
 }
 #endregion
 
+# Visual indicator that the promt is elevated
+if ($host.UI.RawUI.WindowTitle -match "Administrator") {
+    $host.UI.RawUI.BackgroundColor = "DarkRed";
+    $Host.UI.RawUI.ForegroundColor = "White"
+}
+
 # Enable CTRL-u deletes line and CTRL-d exits
 Set-PSReadLineKeyHandler -Key Ctrl+u -Function BackwardDeleteLine
 Set-PSReadLineKeyHandler -Key Ctrl+d -Function ViExit
